@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Waterplantinator_App.MainPage">
+
+	<StackLayout>
+		<ImageButton WidthRequest="30" HeightRequest="30" Aspect="AspectFit"  HorizontalOptions="EndAndExpand" Source="settings.xml"/>
+
+
+		<Frame BackgroundColor="#6EC66D" Padding="24" CornerRadius="0">
+			<Label Text="Waterplantinator" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+		</Frame>
+		<Frame BackgroundColor="#C4C4C4" CornerRadius="0">
+			<Label Text="Plantje beneden" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+		</Frame>
+
+		<FlexLayout  JustifyContent="SpaceEvenly">
+			<Button WidthRequest="50" HeightRequest="50"  Text="-" FontSize="20" FontAttributes="Bold" BackgroundColor="#FF6666" CornerRadius="50"></Button>
+			<Label Text="1 / 3" FontSize="30"></Label>
+			<Button WidthRequest="50" HeightRequest="50"  Text="+" FontSize="20" FontAttributes="Bold" BackgroundColor="#7E7E7E" CornerRadius="50"></Button>
+		</FlexLayout>
+
+		<StackLayout>
+			<Label HorizontalTextAlignment="Center" FontSize="30">Aloë vera</Label>
+			<Image WidthRequest="200" HeightRequest="200" Aspect="AspectFit"  HorizontalOptions="Center" Source="plant.xml"/>
+
+			<AbsoluteLayout>
+				<CarouselView
+	            x:Name="TheCarousel"
+	            AbsoluteLayout.LayoutBounds="0,0,1,1"
+	            AbsoluteLayout.LayoutFlags="All"
+	            ItemsSource="{Binding sensorData}"
+	            IndicatorView="indicatorview">
+					<CarouselView.ItemTemplate>
+						<DataTemplate>
+							<Grid>
+								<Grid.RowDefinitions>
+									<RowDefinition Height="100" />
+									<RowDefinition Height="100"/>
+									<RowDefinition Height="50"/>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition />
+									<ColumnDefinition />
+									<ColumnDefinition />
+								</Grid.ColumnDefinitions>
+								<BoxView Color="#B4E8E8" />
+								<Label 
+									   Text="{Binding Humidity}"
+								       HorizontalOptions="Center"
+								       VerticalOptions="Center" />
+
+								<BoxView Grid.Column="1" Color="#F8E5A2"/>
+								<Label Grid.Column="1"
+								       Text="{Binding Light}"
+								       HorizontalOptions="Center"
+								       VerticalOptions="Center" />
+								<BoxView Grid.Column="2" Color="#FFC2A8" />
+								<Label Grid.Column="2"
+								       Text="{Binding Temperature}"
+								       HorizontalOptions="Center"
+								       VerticalOptions="Center" />
+								<BoxView Grid.Row="1"
+								         Color="#547BDF" />
+								<Label Grid.Row="1"
+								       Text="{Binding Watertank}"
+								       HorizontalOptions="Center"
+								       VerticalOptions="Center" />
+								<BoxView Grid.Row="1"
+								         Grid.Column="1"
+								         Color="#7B6A6A" />
+								<Label Grid.Row="1"
+								       Grid.Column="1"
+								       Text="{Binding Soilmoist}"
+								       HorizontalOptions="Center"
+								       VerticalOptions="Center" />
+								<BoxView Grid.Row="1" Grid.Column="2"
+								         Color="#4CA987" />
+								<Label Grid.Column="2" Grid.Row="1"
+								       Text="{Binding Time}"
+								       HorizontalOptions="Center"
+								       VerticalOptions="Center" />
+								<Button Grid.Row="2" Grid.Column="1" Text="Water it!" CornerRadius="20" BackgroundColor="#569CC3"></Button>
+							</Grid>
+						</DataTemplate>
+					</CarouselView.ItemTemplate>
+				</CarouselView>
+				<IndicatorView
+	            x:Name="indicatorview"
+	            AbsoluteLayout.LayoutBounds="0.5,0.95,100,100"
+	            AbsoluteLayout.LayoutFlags="PositionProportional"
+	            IndicatorColor="LightGray"
+	            IndicatorSize="10"
+	            SelectedIndicatorColor="Black" />
+			</AbsoluteLayout>
+		</StackLayout>
+	</StackLayout>
+
+</ContentPage>

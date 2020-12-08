@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "UyQXcCatu1S/h8ERNlDYMoCoBFXDguJ6wp+JcSqJa2ruGXhmjEfXe9FXP83VTg36ZXGaJiTAXHtvrH89DAv/tA==",
+  "success": true,
+  "projectFilePath": "C:\\Github\\waterplantinator\\App\\Waterplantinator_App.iOS\\Waterplantinator_App.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\wjsti\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}
