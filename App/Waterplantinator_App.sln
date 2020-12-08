@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waterplantinator_App.Androi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waterplantinator_App.iOS", "Waterplantinator_App.iOS\Waterplantinator_App.iOS.csproj", "{BB3DE4E5-EE27-464E-8E60-0CF9984A1229}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waterplantinator_App", "Waterplantinator_App\Waterplantinator_App.csproj", "{26FB1179-8375-405A-AC1C-C8F9C57A7148}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Waterplantinator_App", "Waterplantinator_App\Waterplantinator_App.csproj", "{26FB1179-8375-405A-AC1C-C8F9C57A7148}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{358DEE60-BEDC-4922-8795-BD8FDA8E644D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

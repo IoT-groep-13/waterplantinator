@@ -28,3 +28,18 @@ C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterp
 C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App\bin\Debug\netstandard2.0\Waterplantinator_App.dll
 C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App\bin\Debug\netstandard2.0\ref\Waterplantinator_App.dll
 C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App\bin\Debug\netstandard2.0\Waterplantinator_App.pdb
+F:\GitHub\waterplantinator\App\Waterplantinator_App\bin\Debug\netstandard2.0\Waterplantinator_App.deps.json
+F:\GitHub\waterplantinator\App\Waterplantinator_App\bin\Debug\netstandard2.0\Waterplantinator_App.dll
+F:\GitHub\waterplantinator\App\Waterplantinator_App\bin\Debug\netstandard2.0\ref\Waterplantinator_App.dll
+F:\GitHub\waterplantinator\App\Waterplantinator_App\bin\Debug\netstandard2.0\Waterplantinator_App.pdb
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.csprojAssemblyReference.cache
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Settings.xaml.g.cs
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.AssemblyInfoInputs.cache
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.AssemblyInfo.cs
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.csproj.CoreCompileInputs.cache
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\XamlC.stamp
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.dll
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\ref\Waterplantinator_App.dll
+F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.pdb

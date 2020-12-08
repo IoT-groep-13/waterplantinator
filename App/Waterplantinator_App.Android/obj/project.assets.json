@@ -1933,24 +1933,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wjsti\\.nuget\\packages\\": {},
+    "C:\\Users\\Wim\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Github\\waterplantinator\\App\\Waterplantinator_App.Android\\Waterplantinator_App.Android.csproj",
+      "projectUniqueName": "F:\\GitHub\\waterplantinator\\App\\Waterplantinator_App.Android\\Waterplantinator_App.Android.csproj",
       "projectName": "Waterplantinator_App.Android",
-      "projectPath": "C:\\Github\\waterplantinator\\App\\Waterplantinator_App.Android\\Waterplantinator_App.Android.csproj",
-      "packagesPath": "C:\\Users\\wjsti\\.nuget\\packages\\",
-      "outputPath": "C:\\Github\\waterplantinator\\App\\Waterplantinator_App.Android\\obj\\",
+      "projectPath": "F:\\GitHub\\waterplantinator\\App\\Waterplantinator_App.Android\\Waterplantinator_App.Android.csproj",
+      "packagesPath": "C:\\Users\\Wim\\.nuget\\packages\\",
+      "outputPath": "F:\\GitHub\\waterplantinator\\App\\Waterplantinator_App.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\wjsti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Wim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1964,8 +1964,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Github\\waterplantinator\\App\\Waterplantinator_App\\Waterplantinator_App.csproj": {
-              "projectPath": "C:\\Github\\waterplantinator\\App\\Waterplantinator_App\\Waterplantinator_App.csproj"
+            "F:\\GitHub\\waterplantinator\\App\\Waterplantinator_App\\Waterplantinator_App.csproj": {
+              "projectPath": "F:\\GitHub\\waterplantinator\\App\\Waterplantinator_App\\Waterplantinator_App.csproj"
             }
           }
         }

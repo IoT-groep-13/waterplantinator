@@ -8391,25 +8391,28 @@ namespace Waterplantinator_App.Droid
 			public const int plant = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int settings = 2131165298;
+			public const int refresh = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int soilwater = 2131165299;
+			public const int settings = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int temperature = 2131165300;
+			public const int soilwater = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int tooltip_frame_dark = 2131165301;
+			public const int temperature = 2131165301;
 			
 			// aapt resource value: 0x7F070076
-			public const int tooltip_frame_light = 2131165302;
+			public const int tooltip_frame_dark = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int water = 2131165303;
+			public const int tooltip_frame_light = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int watertank = 2131165304;
+			public const int water = 2131165304;
+			
+			// aapt resource value: 0x7F070079
+			public const int watertank = 2131165305;
 			
 			static Drawable()
 			{

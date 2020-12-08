@@ -1,38 +1,38 @@
-@string/appbar_scrolling_view_behavior;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\flyoutcontent.xml
-@string/appbar_scrolling_view_behavior;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
+@string/appbar_scrolling_view_behavior;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\flyoutcontent.xml
+@string/appbar_scrolling_view_behavior;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
 adaptive-icon;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 adaptive-icon;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
-alpha;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromleft.xml
-alpha;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\exittoleft.xml
-android.support.design.widget.AppBarLayout;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\flyoutcontent.xml
-android.support.design.widget.AppBarLayout;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
-android.support.design.widget.AppBarLayout;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\shellcontent.xml
-android.support.design.widget.BottomNavigationView;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\bottomtablayout.xml
-android.support.design.widget.CoordinatorLayout;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\flyoutcontent.xml
-android.support.design.widget.CoordinatorLayout;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
-android.support.design.widget.CoordinatorLayout;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\shellcontent.xml
-android.support.design.widget.TabLayout;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
+alpha;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromleft.xml
+alpha;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\exittoleft.xml
+android.support.design.widget.AppBarLayout;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\flyoutcontent.xml
+android.support.design.widget.AppBarLayout;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
+android.support.design.widget.AppBarLayout;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\shellcontent.xml
+android.support.design.widget.BottomNavigationView;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\bottomtablayout.xml
+android.support.design.widget.CoordinatorLayout;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\flyoutcontent.xml
+android.support.design.widget.CoordinatorLayout;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
+android.support.design.widget.CoordinatorLayout;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\shellcontent.xml
+android.support.design.widget.TabLayout;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
 android.support.design.widget.TabLayout;obj\Debug\90\res\layout\tabbar.xml
-android.support.v7.widget.RecyclerView;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\flyoutcontent.xml
-android.support.v7.widget.Toolbar;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
-android.support.v7.widget.Toolbar;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\shellcontent.xml
+android.support.v7.widget.RecyclerView;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\flyoutcontent.xml
+android.support.v7.widget.Toolbar;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
+android.support.v7.widget.Toolbar;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\shellcontent.xml
 android.support.v7.widget.Toolbar;obj\Debug\90\res\layout\toolbar.xml
-attr;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\attrs.xml
+attr;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\attrs.xml
 background;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
-cache-path;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+cache-path;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\90\res\values\colors.xml
-declare-styleable;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\attrs.xml
-external-cache-path;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-external-path;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+declare-styleable;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\attrs.xml
+external-cache-path;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
-FrameLayout;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\bottomtablayout.xml
+FrameLayout;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\bottomtablayout.xml
 group;obj\Debug\90\res\drawable\settings.xml
 group;obj\Debug\90\res\drawable\temperature.xml
 group;obj\Debug\90\res\drawable\watertank.xml
-item;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\styles.xml
-LinearLayout;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\bottomtablayout.xml
+item;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\styles.xml
+LinearLayout;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\bottomtablayout.xml
 path;obj\Debug\90\res\drawable\calendar.xml
 path;obj\Debug\90\res\drawable\clock.xml
 path;obj\Debug\90\res\drawable\light.xml
@@ -42,23 +42,23 @@ path;obj\Debug\90\res\drawable\soilwater.xml
 path;obj\Debug\90\res\drawable\temperature.xml
 path;obj\Debug\90\res\drawable\water.xml
 path;obj\Debug\90\res\drawable\watertank.xml
-paths;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-resources;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\attrs.xml
-resources;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\strings.xml
-resources;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\styles.xml
+paths;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+resources;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\attrs.xml
+resources;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\strings.xml
+resources;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\styles.xml
 resources;obj\Debug\90\res\values\colors.xml
 resources;obj\Debug\90\res\values\styles.xml
-set;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromleft.xml
-set;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromright.xml
-set;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\exittoleft.xml
-set;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\exittoright.xml
-string;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\strings.xml
-style;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\styles.xml
+set;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromleft.xml
+set;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromright.xml
+set;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\exittoleft.xml
+set;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\exittoright.xml
+string;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\strings.xml
+style;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\values\styles.xml
 style;obj\Debug\90\res\values\styles.xml
-translate;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromleft.xml
-translate;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromright.xml
-translate;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\exittoleft.xml
-translate;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\exittoright.xml
+translate;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromleft.xml
+translate;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\enterfromright.xml
+translate;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\exittoleft.xml
+translate;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\anim\exittoright.xml
 vector;obj\Debug\90\res\drawable\calendar.xml
 vector;obj\Debug\90\res\drawable\clock.xml
 vector;obj\Debug\90\res\drawable\light.xml
@@ -68,4 +68,4 @@ vector;obj\Debug\90\res\drawable\soilwater.xml
 vector;obj\Debug\90\res\drawable\temperature.xml
 vector;obj\Debug\90\res\drawable\water.xml
 vector;obj\Debug\90\res\drawable\watertank.xml
-xamarin.forms.platform.android.appcompat.FormsViewPager;C:\Users\wjsti\OneDrive - NHL Stenden\HBO_ICT\Jaar 1\Waterplantinator_App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml
+xamarin.forms.platform.android.appcompat.FormsViewPager;F:\GitHub\waterplantinator\App\Waterplantinator_App.Android\obj\Debug\90\lp\39\jl\res\layout\rootlayout.xml

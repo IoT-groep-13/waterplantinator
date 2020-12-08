@@ -4591,13 +4591,14 @@ public final class R {
     public static final int notification_tile_bg=0x7f070075;
     public static final int notify_panel_notification_icon_bg=0x7f070076;
     public static final int plant=0x7f070077;
-    public static final int settings=0x7f070078;
-    public static final int soilwater=0x7f070079;
-    public static final int temperature=0x7f07007a;
-    public static final int tooltip_frame_dark=0x7f07007b;
-    public static final int tooltip_frame_light=0x7f07007c;
-    public static final int water=0x7f07007d;
-    public static final int watertank=0x7f07007e;
+    public static final int refresh=0x7f070078;
+    public static final int settings=0x7f070079;
+    public static final int soilwater=0x7f07007a;
+    public static final int temperature=0x7f07007b;
+    public static final int tooltip_frame_dark=0x7f07007c;
+    public static final int tooltip_frame_light=0x7f07007d;
+    public static final int water=0x7f07007e;
+    public static final int watertank=0x7f07007f;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
