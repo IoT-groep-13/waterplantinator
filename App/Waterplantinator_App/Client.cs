@@ -34,30 +34,55 @@ namespace Waterplantinator_App
 
 		public static SensorData Receive()
 		{
+			string humidity, light, temp, watertank, soilmoist;
 
 			byte[] bytes = new byte[1024];
+			try
+			{
+				//TODO: change names to Arduino requests
+				Send("<HUMIDITY>");
+				int bytesRec = sender.Receive(bytes);
+				humidity = Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
 
-			Send("<HUMIDITY>");
-			int bytesRec = sender.Receive(bytes);
-			var humidity = Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
+				Send("<LIGHT>");
+				bytesRec = sender.Receive(bytes);
+				light = Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
 
-			Send("<LIGHT>");
-			bytesRec = sender.Receive(bytes);
-			var light = Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
+				Send("<TEMPERATURE>");
+				bytesRec = sender.Receive(bytes);
+				temp = Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
 
-			Send("<TEMPERATURE>");
-			bytesRec = sender.Receive(bytes);
-			var temp = Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
+				Send("<WATERTANK>");
+				bytesRec = sender.Receive(bytes);
+				watertank = Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
 
-			Send("<WATERTANK>");
-			bytesRec = sender.Receive(bytes);
-			var watertank = Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
-
-			Send("<SOILMOIST>");
-			bytesRec = sender.Receive(bytes);
-			var soilmoist = Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
-
+				Send("<SOILMOIST>");
+				bytesRec = sender.Receive(bytes);
+				soilmoist = Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
+			}
+			catch (Exception e)
+			{
+				humidity = light = temp = watertank = soilmoist = "0";
+				Console.WriteLine(e);
+			}
 			return new SensorData(Convert.ToInt32(humidity), Convert.ToInt32(light), Convert.ToInt32(temp), Convert.ToInt32(watertank), Convert.ToInt32(soilmoist), DateTime.Now);
+		}
+
+		public static string GiveWater()
+		{
+			byte[] bytes = new byte[1024];
+			try
+			{
+				//TODO: change names to Arduino requests
+				Send("<WATER>");
+				int bytesRec = sender.Receive(bytes);
+				return Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e);
+				return "FAIL";
+			}
 		}
 
 		public static void CloseConnection()

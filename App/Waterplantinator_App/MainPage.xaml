@@ -5,9 +5,9 @@
 	<ScrollView>
 		<StackLayout>
 			<FlexLayout JustifyContent="SpaceBetween">
-			<ImageButton x:Name="refresh" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" Source="refresh.xml" Clicked="Refresh_OnClicked"/>
+				<ImageButton x:Name="refreshIBtn" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" Source="refreshIBtn.xml" Clicked="RefreshIBtn_OnClicked"/>
 
-			<ImageButton x:Name="settings" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" Source="settings.xml" Clicked="Settings_OnClicked"/>
+				<ImageButton x:Name="settingsIBtn" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" Source="settingsIBtn.xml" Clicked="SettingsIBtn_OnClicked"/>
 			</FlexLayout>
 
 			<Frame BackgroundColor="#6EC66D" Padding="24" CornerRadius="0">
@@ -82,7 +82,7 @@
 									       Text="{Binding Time}"
 									       HorizontalOptions="Center"
 									       VerticalOptions="Center" />
-									<Button Grid.Row="2" Grid.Column="1" Text="Water it!" CornerRadius="20" BackgroundColor="#569CC3"></Button>
+									<Button x:Name="waterBtn" Grid.Row="2" Grid.Column="1" Text="Water it!" CornerRadius="20" BackgroundColor="#569CC3" Clicked="WaterBtn_OnClicked"></Button>
 								</Grid>
 							</DataTemplate>
 						</CarouselView.ItemTemplate>
