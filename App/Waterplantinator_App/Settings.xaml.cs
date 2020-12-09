@@ -15,6 +15,11 @@ namespace Waterplantinator_App
 		public Settings()
 		{
 			InitializeComponent();
+
+			//TODO: dark/light theme button
+			//OSAppTheme currentTheme = Application.Current.RequestedTheme;
+			//Application.Current.UserAppTheme = OSAppTheme.Dark;
+			//Application.Current.UserAppTheme = OSAppTheme.Light;
 		}
 	}
 }

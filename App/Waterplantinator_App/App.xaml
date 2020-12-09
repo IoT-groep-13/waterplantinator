@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Waterplantinator_App.App">
     <Application.Resources>
-
+		<Color x:Key="LightTextColor">#000000</Color>
+		<Color x:Key="DarkTextColor">#FFFFFF</Color>
     </Application.Resources>
 </Application>

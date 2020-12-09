@@ -1,102 +1,115 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Waterplantinator_App.MainPage">
-	<ScrollView>
-		<StackLayout>
-			<FlexLayout JustifyContent="SpaceBetween">
-				<ImageButton x:Name="refreshIBtn" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" Source="refreshIBtn.xml" Clicked="RefreshIBtn_OnClicked"/>
 
-				<ImageButton x:Name="settingsIBtn" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" Source="settingsIBtn.xml" Clicked="SettingsIBtn_OnClicked"/>
-			</FlexLayout>
+	<StackLayout>
 
-			<Frame BackgroundColor="#6EC66D" Padding="24" CornerRadius="0">
-				<Label Text="Waterplantinator" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-			</Frame>
-			<Frame BackgroundColor="#C4C4C4" CornerRadius="0">
-				<Label Text="Plantje beneden" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
-			</Frame>
+		<FlexLayout JustifyContent="SpaceBetween" BackgroundColor="#6EC66D" Padding="10">
+			<ImageButton x:Name="refreshIBtn" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" Source="refresh.xml"
+			             BackgroundColor="Transparent" Clicked="RefreshIBtn_OnClicked" />
 
-			<FlexLayout  JustifyContent="SpaceEvenly">
-				<Button WidthRequest="50" HeightRequest="50"  Text="-" FontSize="20" FontAttributes="Bold" BackgroundColor="#FF6666" CornerRadius="50"></Button>
-				<Label Text="1 / 3" FontSize="30"></Label>
-				<Button WidthRequest="50" HeightRequest="50"  Text="+" FontSize="20" FontAttributes="Bold" BackgroundColor="#7E7E7E" CornerRadius="50"></Button>
-			</FlexLayout>
+			<ImageButton x:Name="settingsIBtn" WidthRequest="50" HeightRequest="50" Aspect="AspectFit" Source="settings.xml"
+			             BackgroundColor="Transparent" Clicked="SettingsIBtn_OnClicked" />
+		</FlexLayout>
+		<ScrollView>
 			<StackLayout>
-				<Label HorizontalTextAlignment="Center" FontSize="30">Aloë vera</Label>
-				<Image WidthRequest="200" HeightRequest="200" Aspect="AspectFit"  HorizontalOptions="Center" Source="plant.xml"/>
+				<Frame BackgroundColor="#6EC66D" Padding="20" CornerRadius="0" Margin="-6">
+					<Label Text="Waterplantinator" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+				</Frame>
+				<Frame BackgroundColor="#C4C4C4" CornerRadius="0">
+					<Label Text="Plantje beneden" HorizontalTextAlignment="Center" TextColor="White" FontSize="20" />
+				</Frame>
 
-				<AbsoluteLayout>
-					<CarouselView
-		            x:Name="TheCarousel"
-		            AbsoluteLayout.LayoutBounds="0,0,1,1"
-		            AbsoluteLayout.LayoutFlags="All"
-		            ItemsSource="{Binding sensorData}"
-		            IndicatorView="indicatorview">
-						<CarouselView.ItemTemplate>
-							<DataTemplate>
+				<FlexLayout JustifyContent="SpaceEvenly">
+					<Button WidthRequest="50" HeightRequest="50" Text="-" FontSize="20" FontAttributes="Bold"
+					        BackgroundColor="#FF6666" CornerRadius="50" />
+					<Label Text="1 / 1" FontSize="30" />
+					<Button WidthRequest="50" HeightRequest="50" Text="+" FontSize="20" FontAttributes="Bold"
+					        BackgroundColor="#7E7E7E" CornerRadius="50" />
+				</FlexLayout>
+				<Frame HasShadow="False" CornerRadius="25" Padding="10" BackgroundColor="#6EC66D">
+					<Frame HasShadow="True" CornerRadius="23" BackgroundColor="#424242">
+						<StackLayout>
+							<StackLayout x:Name="FrontSide">
+								<StackLayout.GestureRecognizers>
+									<TapGestureRecognizer Tapped="ToggleSide_OnTapped" />
+								</StackLayout.GestureRecognizers>
+								<Label HorizontalTextAlignment="Center" FontSize="30" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}">Aloë vera</Label>
+								<Image WidthRequest="200" HeightRequest="200" Aspect="AspectFit" HorizontalOptions="Center" Source="plant.xml" />
+							</StackLayout>
+
+							<StackLayout x:Name="BackSide" VerticalOptions="FillAndExpand">
+								<StackLayout.GestureRecognizers>
+									<TapGestureRecognizer Tapped="ToggleSide_OnTapped" />
+								</StackLayout.GestureRecognizers>
 								<Grid>
 									<Grid.RowDefinitions>
-										<RowDefinition Height="100" />
-										<RowDefinition Height="100"/>
-										<RowDefinition Height="50"/>
+										<RowDefinition Height="125" />
+										<RowDefinition Height="125" />
 									</Grid.RowDefinitions>
 									<Grid.ColumnDefinitions>
 										<ColumnDefinition />
 										<ColumnDefinition />
 										<ColumnDefinition />
 									</Grid.ColumnDefinitions>
-									<BoxView Color="#B4E8E8" />
-									<Label 
-										   Text="{Binding Humidity}"
-									       HorizontalOptions="Center"
-									       VerticalOptions="Center" />
 
-									<BoxView Grid.Column="1" Color="#F8E5A2"/>
-									<Label Grid.Column="1"
-									       Text="{Binding Light}"
-									       HorizontalOptions="Center"
-									       VerticalOptions="Center" />
-									<BoxView Grid.Column="2" Color="#FFC2A8" />
-									<Label Grid.Column="2"
-									       Text="{Binding Temperature}"
-									       HorizontalOptions="Center"
-									       VerticalOptions="Center" />
-									<BoxView Grid.Row="1"
-									         Color="#547BDF" />
-									<Label Grid.Row="1"
-									       Text="{Binding Watertank}"
-									       HorizontalOptions="Center"
-									       VerticalOptions="Center" />
-									<BoxView Grid.Row="1"
-									         Grid.Column="1"
-									         Color="#7B6A6A" />
-									<Label Grid.Row="1"
-									       Grid.Column="1"
-									       Text="{Binding Soilmoist}"
-									       HorizontalOptions="Center"
-									       VerticalOptions="Center" />
-									<BoxView Grid.Row="1" Grid.Column="2"
-									         Color="#4CA987" />
-									<Label Grid.Column="2" Grid.Row="1"
-									       Text="{Binding Time}"
-									       HorizontalOptions="Center"
-									       VerticalOptions="Center" />
-									<Button x:Name="waterBtn" Grid.Row="2" Grid.Column="1" Text="Water it!" CornerRadius="20" BackgroundColor="#569CC3" Clicked="WaterBtn_OnClicked"></Button>
+									<BoxView Color="#87E8E8" CornerRadius="20" />
+									<Label FontSize="50" Text="{Binding sensorData.Humidity}" HorizontalOptions="Start" VerticalOptions="Start" />
+									<Label FontSize="20" Text="%" HorizontalOptions="Center" VerticalOptions="Start" />
+									<Image WidthRequest="70" HeightRequest="70" Aspect="AspectFit" HorizontalOptions="End" VerticalOptions="End"
+									       Source="water.xml" />
+
+									<BoxView Grid.Column="1" Color="#FFD12D" CornerRadius="20" />
+									<Label Grid.Column="1" FontSize="50" Text="{Binding sensorData.Light}" HorizontalOptions="Start"
+									       VerticalOptions="Start" />
+									<Label Grid.Column="1" FontSize="20" Text="%" HorizontalOptions="Center" VerticalOptions="Start" />
+									<Image Grid.Column="1" WidthRequest="70" HeightRequest="70" Aspect="AspectFit" HorizontalOptions="End"
+									       VerticalOptions="End" Source="light.xml" />
+
+									<BoxView Grid.Column="2" Color="#FFC2A8" CornerRadius="20" />
+									<Label Grid.Column="2" FontSize="50" Text="{Binding sensorData.Temperature}" HorizontalOptions="Start"
+									       VerticalOptions="Start" />
+									<Label Grid.Column="2" FontSize="20" Text="°C" HorizontalOptions="Center" VerticalOptions="Start" />
+									<Image Grid.Column="2" WidthRequest="70" HeightRequest="70" Aspect="AspectFit" HorizontalOptions="End"
+									       VerticalOptions="End" Source="temperature.xml" />
+
+
+									<BoxView Grid.Row="1" Color="#547BDF" CornerRadius="20" />
+									<Label Grid.Row="1" FontSize="50" Text="{Binding sensorData.Watertank}" HorizontalOptions="Start"
+									       VerticalOptions="Start" />
+									<Label Grid.Row="1" FontSize="20" Text="%" HorizontalOptions="Center" VerticalOptions="Start" />
+									<Image Grid.Row="1" WidthRequest="70" HeightRequest="70" Aspect="AspectFit" HorizontalOptions="End"
+									       VerticalOptions="End" Source="watertank.xml" />
+
+									<BoxView Grid.Row="1" Grid.Column="1" Color="#7B6A6A" CornerRadius="20" />
+									<Label Grid.Row="1" Grid.Column="1" FontSize="50" Text="{Binding sensorData.Soilmoist}"
+									       HorizontalOptions="Start" VerticalOptions="Start" />
+									<Label Grid.Row="1" Grid.Column="1" FontSize="20" Text="%" HorizontalOptions="Center" VerticalOptions="Start" />
+									<Image Grid.Row="1" Grid.Column="1" WidthRequest="70" HeightRequest="70" Aspect="AspectFit"
+									       HorizontalOptions="End" VerticalOptions="End" Source="soilwater.xml" />
+
+									<BoxView Grid.Row="1" Grid.Column="2" Color="#4CA987" CornerRadius="20" />
+									<Label Grid.Row="1" Grid.Column="2" FontSize="20" Text="{Binding Date, Mode=OneWay}" Margin="0,0,0,30"
+									       HorizontalOptions="Center" VerticalOptions="Center" />
+									<Image Grid.Row="1" Grid.Column="2" WidthRequest="30" HeightRequest="30" Aspect="AspectFit"
+									       HorizontalOptions="Center" VerticalOptions="Start" Source="calendar.xml" />
+									<Label Grid.Row="1" Grid.Column="2" FontSize="25" Text="{Binding Time, Mode=OneWay}" HorizontalOptions="Center"
+									       VerticalOptions="End" />
+									<Image Grid.Row="1" Grid.Column="2" WidthRequest="30" HeightRequest="30" Margin="0,30,0,0" Aspect="AspectFit"
+									       HorizontalOptions="Center" VerticalOptions="Center" Source="clock.xml" />
+
 								</Grid>
-							</DataTemplate>
-						</CarouselView.ItemTemplate>
-					</CarouselView>
-					<IndicatorView
-		            x:Name="indicatorview"
-		            AbsoluteLayout.LayoutBounds="0.5,0.95,100,100"
-		            AbsoluteLayout.LayoutFlags="PositionProportional"
-		            IndicatorColor="LightGray"
-		            IndicatorSize="10"
-		            SelectedIndicatorColor="Black" />
-				</AbsoluteLayout>
+							</StackLayout>
+						</StackLayout>
+					</Frame>
+				</Frame>
+				<Button x:Name="waterBtn" WidthRequest="300" HeightRequest="50" HorizontalOptions="Center" Text="Water it!"
+				        CornerRadius="20" BackgroundColor="#569CC3" Clicked="WaterBtn_OnClicked" />
 			</StackLayout>
-		</StackLayout>
-	</ScrollView>
+		</ScrollView>
+
+	</StackLayout>
 
 </ContentPage>
