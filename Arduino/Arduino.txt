@@ -1,0 +1,6 @@
+In deze map bevind zich de code van de arduino.
+
+Elk onderdeel is eerst apart gemaakt en daarna samengevoegd.
+
+op deze manier als er een bug is kunnen we ook nog bij de oude
+code van dit onderwerp.
