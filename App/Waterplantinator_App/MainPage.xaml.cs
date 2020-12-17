@@ -20,22 +20,22 @@ namespace Waterplantinator_App
 		{
 			InitializeComponent();
 			BindingContext = this;
-			FrontSide.IsVisible = true;
-			BackSide.IsVisible = false;
 
 			Client.OpenConnection();
 			sensorData = Client.Receive();
-			Time = sensorData.Time.ToLongTimeString();
-			Date = sensorData.Time.ToShortDateString();
+			Time = sensorData.Time;
+			Date = sensorData.Date;
 			Client.CloseConnection();
+			FrontSide.IsVisible = true;
+			BackSide.IsVisible = false;
 		}
 
 		private void RefreshIBtn_OnClicked(object sender, EventArgs e)
 		{
 			Client.OpenConnection();
 			sensorData = Client.Receive();
-			Time = sensorData.Time.ToLongTimeString();
-			Date = sensorData.Time.ToShortDateString();
+			Time = sensorData.Time;
+			Date = sensorData.Date;
 			Client.CloseConnection();
 		}
 
@@ -51,10 +51,16 @@ namespace Waterplantinator_App
 			Client.CloseConnection();
 		}
 
-		private void ToggleSide_OnTapped(object sender, EventArgs e)
+		private void BackSide_OnTapped(object sender, EventArgs e)
 		{
-			FrontSide.IsVisible = !FrontSide.IsVisible;
-			BackSide.IsVisible = !BackSide.IsVisible;
+			FrontSide.IsVisible = true;
+			BackSide.IsVisible = false;
+		}
+
+		private void FrontSide_OnTapped(object sender, EventArgs e)
+		{
+			FrontSide.IsVisible = false;
+			BackSide.IsVisible = true;
 		}
 	}
 }

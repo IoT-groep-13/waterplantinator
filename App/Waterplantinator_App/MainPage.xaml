@@ -34,7 +34,7 @@
 						<StackLayout>
 							<StackLayout x:Name="FrontSide">
 								<StackLayout.GestureRecognizers>
-									<TapGestureRecognizer Tapped="ToggleSide_OnTapped" />
+									<TapGestureRecognizer Tapped="FrontSide_OnTapped" />
 								</StackLayout.GestureRecognizers>
 								<Label HorizontalTextAlignment="Center" FontSize="30" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}">Aloë vera</Label>
 								<Image WidthRequest="200" HeightRequest="200" Aspect="AspectFit" HorizontalOptions="Center" Source="plant.xml" />
@@ -42,7 +42,7 @@
 
 							<StackLayout x:Name="BackSide" VerticalOptions="FillAndExpand">
 								<StackLayout.GestureRecognizers>
-									<TapGestureRecognizer Tapped="ToggleSide_OnTapped" />
+									<TapGestureRecognizer Tapped="BackSide_OnTapped" />
 								</StackLayout.GestureRecognizers>
 								<Grid>
 									<Grid.RowDefinitions>
@@ -91,11 +91,11 @@
 									       HorizontalOptions="End" VerticalOptions="End" Source="soilwater.xml" />
 
 									<BoxView Grid.Row="1" Grid.Column="2" Color="#4CA987" CornerRadius="20" />
-									<Label Grid.Row="1" Grid.Column="2" FontSize="20" Text="{Binding Date, Mode=OneWay}" Margin="0,0,0,30"
+									<Label Grid.Row="1" Grid.Column="2" FontSize="20" Text="{Binding sensorData.Date}" Margin="0,0,0,30"
 									       HorizontalOptions="Center" VerticalOptions="Center" />
 									<Image Grid.Row="1" Grid.Column="2" WidthRequest="30" HeightRequest="30" Aspect="AspectFit"
 									       HorizontalOptions="Center" VerticalOptions="Start" Source="calendar.xml" />
-									<Label Grid.Row="1" Grid.Column="2" FontSize="25" Text="{Binding Time, Mode=OneWay}" HorizontalOptions="Center"
+									<Label Grid.Row="1" Grid.Column="2" FontSize="25" Text="{Binding sensorData.Time}" HorizontalOptions="Center"
 									       VerticalOptions="End" />
 									<Image Grid.Row="1" Grid.Column="2" WidthRequest="30" HeightRequest="30" Margin="0,30,0,0" Aspect="AspectFit"
 									       HorizontalOptions="Center" VerticalOptions="Center" Source="clock.xml" />
