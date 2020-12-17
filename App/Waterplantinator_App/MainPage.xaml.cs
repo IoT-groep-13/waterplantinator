@@ -51,16 +51,34 @@ namespace Waterplantinator_App
 			Client.CloseConnection();
 		}
 
-		private void BackSide_OnTapped(object sender, EventArgs e)
+		private async void BackSide_OnTapped(object sender, EventArgs e)
 		{
-			FrontSide.IsVisible = true;
+			await Task.WhenAll(
+			BackSide.RotateYTo(40, 300)
+			);
+
 			BackSide.IsVisible = false;
+			FrontSide.IsVisible = true;
+			FrontSide.RotationY = -90;
+
+			await Task.WhenAll(
+				FrontSide.RotateYTo(0, 500)
+			);
 		}
 
-		private void FrontSide_OnTapped(object sender, EventArgs e)
+		private async void FrontSide_OnTapped(object sender, EventArgs e)
 		{
+			await Task.WhenAll(
+				FrontSide.RotateYTo(90, 500)
+			);
+
 			FrontSide.IsVisible = false;
 			BackSide.IsVisible = true;
+			BackSide.RotationY = -40;
+
+			await Task.WhenAll(
+				BackSide.RotateYTo(0, 300)
+			);
 		}
 	}
 }
