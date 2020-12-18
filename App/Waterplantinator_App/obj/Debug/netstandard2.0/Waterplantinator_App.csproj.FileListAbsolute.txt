@@ -43,3 +43,17 @@ F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Xam
 F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.dll
 F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\ref\Waterplantinator_App.dll
 F:\GitHub\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.pdb
+C:\Github\waterplantinator\App\Waterplantinator_App\bin\Debug\netstandard2.0\Waterplantinator_App.deps.json
+C:\Github\waterplantinator\App\Waterplantinator_App\bin\Debug\netstandard2.0\Waterplantinator_App.dll
+C:\Github\waterplantinator\App\Waterplantinator_App\bin\Debug\netstandard2.0\ref\Waterplantinator_App.dll
+C:\Github\waterplantinator\App\Waterplantinator_App\bin\Debug\netstandard2.0\Waterplantinator_App.pdb
+C:\Github\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Github\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Github\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Settings.xaml.g.cs
+C:\Github\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.AssemblyInfoInputs.cache
+C:\Github\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.AssemblyInfo.cs
+C:\Github\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.csproj.CoreCompileInputs.cache
+C:\Github\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Github\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.dll
+C:\Github\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\ref\Waterplantinator_App.dll
+C:\Github\waterplantinator\App\Waterplantinator_App\obj\Debug\netstandard2.0\Waterplantinator_App.pdb
