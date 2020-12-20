@@ -3,8 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Waterplantinator_App.Settings">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundColor}, Dark={StaticResource DarkBackgroundColor}}">
 			<Label Text="Welcome to the settings page" VerticalOptions="CenterAndExpand" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}" HorizontalOptions="CenterAndExpand" />
+            <Button Text="SwitchToLightMode" Clicked="LightButton_Clicked" x:Name="LightButton">                
+            </Button>
+            <Button Text="SwitchToDarkMode" Clicked="DarkButton_Clicked" x:Name="DarkButton">
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -5,5 +5,7 @@
     <Application.Resources>
 		<Color x:Key="LightTextColor">#000000</Color>
 		<Color x:Key="DarkTextColor">#FFFFFF</Color>
+        <Color x:Key="LightBackgroundColor">#FFFFFF</Color>
+        <Color x:Key="DarkBackgroundColor">#424242</Color>
     </Application.Resources>
 </Application>

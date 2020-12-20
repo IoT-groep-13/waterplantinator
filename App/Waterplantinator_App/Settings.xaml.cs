@@ -21,5 +21,15 @@ namespace Waterplantinator_App
 			//Application.Current.UserAppTheme = OSAppTheme.Dark;
 			//Application.Current.UserAppTheme = OSAppTheme.Light;
 		}
+
+        private void LightButton_Clicked(object sender, EventArgs e)
+        {
+			Application.Current.UserAppTheme = OSAppTheme.Light;
+		}
+
+		private void DarkButton_Clicked(object sender, EventArgs e)
+		{
+			Application.Current.UserAppTheme = OSAppTheme.Dark;
+		}
 	}
 }
