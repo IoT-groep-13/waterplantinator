@@ -2,7 +2,8 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Waterplantinator_App.MainPage">
+             x:Class="Waterplantinator_App.MainPage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundColor}, Dark={StaticResource DarkBackgroundColor}}">
 
 	<StackLayout>
 
@@ -24,10 +25,11 @@
                 <FlexLayout JustifyContent="SpaceEvenly" BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundColor}, Dark={StaticResource DarkBackgroundColor}}">
                     <Button WidthRequest="50" HeightRequest="50" Text="-" FontSize="20" FontAttributes="Bold"
 					        BackgroundColor="#FF6666" CornerRadius="50" />
-					<Label Text="1 / 1" FontSize="30" />
+					<Label TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}" Text="1 / 1" FontSize="30" />
 					<Button WidthRequest="50" HeightRequest="50" Text="+" FontSize="20" FontAttributes="Bold"
 					        BackgroundColor="#7E7E7E" CornerRadius="50" />
 				</FlexLayout>
+
 				<Frame HasShadow="False" CornerRadius="25" Padding="10" BackgroundColor="#6EC66D">
                     <Frame HasShadow="True" CornerRadius="23" BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundColor}, Dark={StaticResource DarkBackgroundColor}}">
 						<StackLayout>

@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.IO;
+using System.Reflection;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +13,11 @@ namespace Waterplantinator_App
 		public Settings()
 		{
 			InitializeComponent();
+
+			Assembly asm = Assembly.GetExecutingAssembly();
+			FileInfo fi = new FileInfo(asm.Location);
+
+			VersionLabel.Text = fi.LastWriteTime.ToShortDateString() + " V" + VersionTracking.CurrentVersion;
 
 			//TODO: dark/light theme button
 			//OSAppTheme currentTheme = Application.Current.RequestedTheme;
@@ -30,6 +33,11 @@ namespace Waterplantinator_App
 		private void DarkButton_Clicked(object sender, EventArgs e)
 		{
 			Application.Current.UserAppTheme = OSAppTheme.Dark;
+		}
+
+		private void BackButton_OnClicked(object sender, EventArgs e)
+		{
+			Navigation.PopModalAsync();
 		}
 	}
 }
