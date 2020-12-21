@@ -19,7 +19,6 @@ namespace Waterplantinator_App
 		public MainPage()
 		{
 			InitializeComponent();
-			BindingContext = this;
 
 			Client.OpenConnection();
 			sensorData = Client.Receive();
@@ -28,7 +27,10 @@ namespace Waterplantinator_App
 			Client.CloseConnection();
 			FrontSide.IsVisible = true;
 			BackSide.IsVisible = false;
+
+			BindingContext = this;
 		}
+
 
 		private void RefreshIBtn_OnClicked(object sender, EventArgs e)
 		{
