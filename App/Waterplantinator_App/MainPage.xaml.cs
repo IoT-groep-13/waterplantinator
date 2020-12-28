@@ -19,26 +19,36 @@ namespace Waterplantinator_App
 		public MainPage()
 		{
 			InitializeComponent();
-
-			Client.OpenConnection();
-			sensorData = Client.Receive();
-			Time = sensorData.Time;
-			Date = sensorData.Date;
-			Client.CloseConnection();
+			GetData();
 			FrontSide.IsVisible = true;
 			BackSide.IsVisible = false;
 
 			BindingContext = this;
 		}
 
+		/// <summary>
+		/// Gets data via connection or last data if no connection can be made
+		/// </summary>
+		private void GetData()
+		{
+			Client.OpenConnection();
+			if (Client.connected)
+			{
+				sensorData = Client.Receive();
+				Client.CloseConnection();
+				//TODO: show connected in UI
+			}
+			else
+			{
+				sensorData = Client.GetLastData();
+				//TODO: show not connected in UI
+			}
+		}
+
 
 		private void RefreshIBtn_OnClicked(object sender, EventArgs e)
 		{
-			Client.OpenConnection();
-			sensorData = Client.Receive();
-			Time = sensorData.Time;
-			Date = sensorData.Date;
-			Client.CloseConnection();
+			GetData();
 		}
 
 		private void SettingsIBtn_OnClicked(object sender, EventArgs e)
