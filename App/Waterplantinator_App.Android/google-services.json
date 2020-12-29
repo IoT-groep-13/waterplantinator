@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "872796294072",
+    "project_id": "plantwaterinator",
+    "storage_bucket": "plantwaterinator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872796294072:android:cb9aa30f3120cf77a91d4d",
+        "android_client_info": {
+          "package_name": "com.plantwaterinator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872796294072-fanmiccfkh1h1rkt98d3q8kn03bd1u3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0eGJnrCP48L2SI0nkK3UAYX-mEg6ny7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872796294072-fanmiccfkh1h1rkt98d3q8kn03bd1u3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

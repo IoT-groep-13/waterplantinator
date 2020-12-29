@@ -33,6 +33,7 @@
 				<Frame HasShadow="False" CornerRadius="25" Padding="10" BackgroundColor="#6EC66D">
                     <Frame HasShadow="True" CornerRadius="23" BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundColor}, Dark={StaticResource DarkBackgroundColor}}">
 						<StackLayout>
+							<Ellipse x:Name="ConnectionDot" Fill="Red" WidthRequest="25" HeightRequest="25" HorizontalOptions="End" />
 							<StackLayout x:Name="FrontSide">
 								<StackLayout.GestureRecognizers>
 									<TapGestureRecognizer Tapped="FrontSide_OnTapped" />

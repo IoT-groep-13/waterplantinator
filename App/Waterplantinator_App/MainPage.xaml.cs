@@ -12,9 +12,7 @@ namespace Waterplantinator_App
 	public partial class MainPage : ContentPage
 	{
 
-		public string Time { get; set; }
-		public string Date { get; set; }
-		public SensorData sensorData { get; set; }
+		public SensorData SensorData { get; set; }
 
 		public MainPage()
 		{
@@ -34,20 +32,21 @@ namespace Waterplantinator_App
 			Client.OpenConnection();
 			if (Client.connected)
 			{
-				sensorData = Client.Receive();
+				SensorData = Client.Receive();
 				Client.CloseConnection();
-				//TODO: show connected in UI
+				ConnectionDot.Fill = Brush.LightGreen;
 			}
 			else
 			{
-				sensorData = Client.GetLastData();
-				//TODO: show not connected in UI
+				SensorData = Client.GetLastData();
+				ConnectionDot.Fill = Brush.Red;
 			}
 		}
 
 
 		private void RefreshIBtn_OnClicked(object sender, EventArgs e)
 		{
+			ConnectionDot.Fill = Brush.LightBlue;
 			GetData();
 		}
 
