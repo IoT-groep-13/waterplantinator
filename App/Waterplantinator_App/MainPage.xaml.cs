@@ -32,12 +32,14 @@ namespace Waterplantinator_App
 			Client.OpenConnection();
 			if (Client.connected)
 			{
+				waterBtn.IsEnabled = true;
 				SensorData = Client.Receive();
 				Client.CloseConnection();
 				ConnectionDot.Fill = Brush.LightGreen;
 			}
 			else
 			{
+				waterBtn.IsEnabled = false;
 				SensorData = Client.GetLastData();
 				ConnectionDot.Fill = Brush.Red;
 			}

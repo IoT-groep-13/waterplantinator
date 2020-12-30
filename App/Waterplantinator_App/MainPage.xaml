@@ -58,20 +58,20 @@
 									</Grid.ColumnDefinitions>
 
 									<BoxView Color="#87E8E8" CornerRadius="20" />
-									<Label FontSize="50" Text="{Binding sensorData.Humidity}" HorizontalOptions="Start" VerticalOptions="Start" />
+									<Label FontSize="50" Text="{Binding SensorData.Humidity}" HorizontalOptions="Start" VerticalOptions="Start" />
 									<Label FontSize="20" Text="%" HorizontalOptions="Center" VerticalOptions="Start" />
 									<Image WidthRequest="70" HeightRequest="70" Aspect="AspectFit" HorizontalOptions="End" VerticalOptions="End"
 									       Source="water.xml" />
 
 									<BoxView Grid.Column="1" Color="#FFD12D" CornerRadius="20" />
-									<Label Grid.Column="1" FontSize="50" Text="{Binding sensorData.Light}" HorizontalOptions="Start"
+									<Label Grid.Column="1" FontSize="50" Text="{Binding SensorData.Light}" HorizontalOptions="Start"
 									       VerticalOptions="Start" />
 									<Label Grid.Column="1" FontSize="20" Text="%" HorizontalOptions="Center" VerticalOptions="Start" />
 									<Image Grid.Column="1" WidthRequest="70" HeightRequest="70" Aspect="AspectFit" HorizontalOptions="End"
 									       VerticalOptions="End" Source="light.xml" />
 
 									<BoxView Grid.Column="2" Color="#FFC2A8" CornerRadius="20" />
-									<Label Grid.Column="2" FontSize="50" Text="{Binding sensorData.Temperature}" HorizontalOptions="Start"
+									<Label Grid.Column="2" FontSize="50" Text="{Binding SensorData.Temperature}" HorizontalOptions="Start"
 									       VerticalOptions="Start" />
 									<Label Grid.Column="2" FontSize="20" Text="°C" HorizontalOptions="Center" VerticalOptions="Start" />
 									<Image Grid.Column="2" WidthRequest="70" HeightRequest="70" Aspect="AspectFit" HorizontalOptions="End"
@@ -79,25 +79,25 @@
 
 
 									<BoxView Grid.Row="1" Color="#547BDF" CornerRadius="20" />
-									<Label Grid.Row="1" FontSize="50" Text="{Binding sensorData.Watertank}" HorizontalOptions="Start"
+									<Label Grid.Row="1" FontSize="50" Text="{Binding SensorData.Watertank}" HorizontalOptions="Start"
 									       VerticalOptions="Start" />
 									<Label Grid.Row="1" FontSize="20" Text="%" HorizontalOptions="Center" VerticalOptions="Start" />
 									<Image Grid.Row="1" WidthRequest="70" HeightRequest="70" Aspect="AspectFit" HorizontalOptions="End"
 									       VerticalOptions="End" Source="watertank.xml" />
 
 									<BoxView Grid.Row="1" Grid.Column="1" Color="#7B6A6A" CornerRadius="20" />
-									<Label Grid.Row="1" Grid.Column="1" FontSize="50" Text="{Binding sensorData.Soilmoist}"
+									<Label Grid.Row="1" Grid.Column="1" FontSize="50" Text="{Binding SensorData.Soilmoist}"
 									       HorizontalOptions="Start" VerticalOptions="Start" />
 									<Label Grid.Row="1" Grid.Column="1" FontSize="20" Text="%" HorizontalOptions="Center" VerticalOptions="Start" />
 									<Image Grid.Row="1" Grid.Column="1" WidthRequest="70" HeightRequest="70" Aspect="AspectFit"
 									       HorizontalOptions="End" VerticalOptions="End" Source="soilwater.xml" />
 
 									<BoxView Grid.Row="1" Grid.Column="2" Color="#4CA987" CornerRadius="20" />
-									<Label Grid.Row="1" Grid.Column="2" FontSize="20" Text="{Binding sensorData.Date}" Margin="0,0,0,30"
+									<Label Grid.Row="1" Grid.Column="2" FontSize="20" Text="{Binding SensorData.Date}" Margin="0,0,0,30"
 									       HorizontalOptions="Center" VerticalOptions="Center" />
 									<Image Grid.Row="1" Grid.Column="2" WidthRequest="30" HeightRequest="30" Aspect="AspectFit"
 									       HorizontalOptions="Center" VerticalOptions="Start" Source="calendar.xml" />
-									<Label Grid.Row="1" Grid.Column="2" FontSize="25" Text="{Binding sensorData.Time}" HorizontalOptions="Center"
+									<Label Grid.Row="1" Grid.Column="2" FontSize="25" Text="{Binding SensorData.Time}" HorizontalOptions="Center"
 									       VerticalOptions="End" />
 									<Image Grid.Row="1" Grid.Column="2" WidthRequest="30" HeightRequest="30" Margin="0,30,0,0" Aspect="AspectFit"
 									       HorizontalOptions="Center" VerticalOptions="Center" Source="clock.xml" />
@@ -107,7 +107,7 @@
 						</StackLayout>
 					</Frame>
 				</Frame>
-				<Button x:Name="waterBtn" WidthRequest="300" HeightRequest="50" HorizontalOptions="Center" Text="Water it!"
+				<Button x:Name="waterBtn" WidthRequest="300" HeightRequest="50" HorizontalOptions="Center" Text="Water it!" IsEnabled="False"
 				        CornerRadius="20" BackgroundColor="#569CC3" Clicked="WaterBtn_OnClicked" />
 			</StackLayout>
 		</ScrollView>
