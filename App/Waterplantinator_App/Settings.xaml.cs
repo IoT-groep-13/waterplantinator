@@ -18,21 +18,18 @@ namespace Waterplantinator_App
 			FileInfo fi = new FileInfo(asm.Location);
 
 			VersionLabel.Text = fi.LastWriteTime.ToShortDateString() + " V" + VersionTracking.CurrentVersion;
-
-			//TODO: dark/light theme button
-			//OSAppTheme currentTheme = Application.Current.RequestedTheme;
-			//Application.Current.UserAppTheme = OSAppTheme.Dark;
-			//Application.Current.UserAppTheme = OSAppTheme.Light;
 		}
 
         private void LightButton_Clicked(object sender, EventArgs e)
         {
 			Application.Current.UserAppTheme = OSAppTheme.Light;
+			Preferences.Set("theme", "Light");
 		}
 
 		private void DarkButton_Clicked(object sender, EventArgs e)
 		{
 			Application.Current.UserAppTheme = OSAppTheme.Dark;
+			Preferences.Set("theme", "Dark");
 		}
 
 		private void BackButton_OnClicked(object sender, EventArgs e)

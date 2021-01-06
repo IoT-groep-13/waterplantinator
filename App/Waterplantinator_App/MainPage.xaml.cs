@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Waterplantinator_App
@@ -20,8 +21,18 @@ namespace Waterplantinator_App
 			GetData();
 			FrontSide.IsVisible = true;
 			BackSide.IsVisible = false;
+			getSavedTheme();
 
 			BindingContext = this;
+		}
+
+		/// <summary>
+		/// Gets saved theme and sets it
+		/// </summary>
+		private void getSavedTheme()
+		{
+			string currentTheme = Application.Current.RequestedTheme == OSAppTheme.Light ? "Light" : "Dark";
+			Application.Current.UserAppTheme = Preferences.Get("theme", currentTheme) == "Light" ? OSAppTheme.Light : OSAppTheme.Dark;
 		}
 
 		/// <summary>
@@ -29,6 +40,7 @@ namespace Waterplantinator_App
 		/// </summary>
 		private void GetData()
 		{
+			ConnectionDot.Fill = Brush.LightBlue;
 			Client.OpenConnection();
 			if (Client.connected)
 			{
@@ -48,7 +60,6 @@ namespace Waterplantinator_App
 
 		private void RefreshIBtn_OnClicked(object sender, EventArgs e)
 		{
-			ConnectionDot.Fill = Brush.LightBlue;
 			GetData();
 		}
 
