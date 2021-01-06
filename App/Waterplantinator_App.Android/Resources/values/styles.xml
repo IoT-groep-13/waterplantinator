@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-
   <style name="MainTheme" parent="MainTheme.Base">
     <!-- As of Xamarin.Forms 4.6 the theme has moved into the Forms binary -->
     <!-- If you want to override anything you can do that here. -->
@@ -14,5 +13,9 @@
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
+
+    <item name="colorPrimary">#6EC66D</item>
+    <item name="colorPrimaryDark">#408C3F</item>
+    <item name="colorAccent">#30A9C3</item>
   </style>
 </resources>
