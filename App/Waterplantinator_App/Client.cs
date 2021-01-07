@@ -66,7 +66,6 @@ namespace Waterplantinator_App
 		{
 			byte[] bytes = new byte[1024];
 
-			//TODO: change names to Arduino requests
 			try
 			{
 				Send("<HUMIDITY>");
@@ -137,7 +136,6 @@ namespace Waterplantinator_App
 		public static string GiveWater()
 		{
 			byte[] bytes = new byte[1024];
-			//TODO: change names to Arduino requests
 			Send("<WATER>");
 			int bytesRec = client.Receive(bytes);
 			return Encoding.ASCII.GetString(bytes, 0, bytesRec).Split('>')[1];

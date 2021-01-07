@@ -40,7 +40,6 @@ namespace Waterplantinator_App
 		/// </summary>
 		private void GetData()
 		{
-			ConnectionDot.Fill = Brush.LightBlue;
 			Client.OpenConnection();
 			if (Client.connected)
 			{
