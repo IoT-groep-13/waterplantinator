@@ -19,7 +19,7 @@
 					<Label Text="Plantwaterinator" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
 				</Frame>
 				<Frame BackgroundColor="#BEBEBE" CornerRadius="0">
-					<Label Text="Plantje beneden" HorizontalTextAlignment="Center" TextColor="White" FontSize="20" />
+					<Label Text="Naast tv" HorizontalTextAlignment="Center" TextColor="White" FontSize="20" />
 				</Frame>
 
                 <FlexLayout JustifyContent="SpaceEvenly" BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundColor}, Dark={StaticResource DarkBackgroundColor}}">
@@ -38,7 +38,7 @@
 								<StackLayout.GestureRecognizers>
 									<TapGestureRecognizer Tapped="FrontSide_OnTapped" />
 								</StackLayout.GestureRecognizers>
-								<Label HorizontalTextAlignment="Center" FontSize="30" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}">Aloë vera</Label>
+								<Label HorizontalTextAlignment="Center" FontSize="30" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}">Monstera</Label>
 								<Image WidthRequest="200" HeightRequest="200" Aspect="AspectFit" HorizontalOptions="Center" Source="plant.xml" />
 							</StackLayout>
 
