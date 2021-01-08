@@ -17,13 +17,24 @@
 					<Frame BackgroundColor="#BEBEBE" CornerRadius="0">
 						<Label Text="Instellingen" HorizontalTextAlignment="Center" TextColor="White" FontSize="20" />
 					</Frame>
+                    
+                <FlexLayout JustifyContent="SpaceBetween">
+                        <Label Text="Darkmode" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Label>
+                        <Switch x:Name="ThemeSwitch" Toggled="Switch_Toggled"/>
+                </FlexLayout>
+                    <FlexLayout JustifyContent="SpaceBetween">
+                        <Label Text="IP-adres" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Label>
+                        <Entry x:Name="ipEntry" HorizontalOptions="FillAndExpand" WidthRequest="300" Keyboard="Telephone" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Entry>                      
+                        
+                    </FlexLayout>
+                    <FlexLayout JustifyContent="SpaceBetween">
+                        <Label Text="IP-poort" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Label>
+                        <Entry x:Name="ipPortEntry" HorizontalOptions="FillAndExpand" WidthRequest="300" Keyboard="Telephone" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Entry>
+                    </FlexLayout>
+                    <Button x:Name="SubmitButton" Text="Opslaan" Clicked="SubmitButton_Clicked"></Button>
+                                
 
-				<Button Text="SwitchToLightMode" Clicked="LightButton_Clicked" x:Name="LightButton">
-				</Button>
-				<Button Text="SwitchToDarkMode" Clicked="DarkButton_Clicked" x:Name="DarkButton">
-				</Button>
-
-				<Label Margin="0, 150, 0, 0" Text="Houd uw planten gezond en blij!" FontAttributes="Bold" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}" HorizontalOptions="CenterAndExpand" />
+                    <Label Margin="0, 150, 0, 0" Text="Houd uw planten gezond en blij!" FontAttributes="Bold" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}" HorizontalOptions="CenterAndExpand" />
 				<Image WidthRequest="200" HeightRequest="200" Aspect="AspectFit" HorizontalOptions="Center" Source="happyplant.png" />
 
 				<Label Text="Build Information" FontSize="30" FontAttributes="Bold" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}" HorizontalOptions="CenterAndExpand" />
