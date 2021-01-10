@@ -30,7 +30,7 @@
 					        BackgroundColor="#7E7E7E" CornerRadius="50" />
 				</FlexLayout>
 
-				<Frame HasShadow="False" CornerRadius="25" Padding="10" BackgroundColor="#6EC66D">
+				<Frame Margin="5,0,5,0" HasShadow="False" CornerRadius="25" Padding="10" BackgroundColor="#6EC66D">
                     <Frame HasShadow="True" CornerRadius="23" BackgroundColor="{AppThemeBinding Light={StaticResource LightBackgroundColor}, Dark={StaticResource DarkBackgroundColor}}">
 						<StackLayout>
 							<Ellipse x:Name="ConnectionDot" Fill="Red" WidthRequest="25" HeightRequest="25" HorizontalOptions="End" />
@@ -93,11 +93,11 @@
 									       HorizontalOptions="End" VerticalOptions="End" Source="soilwater.xml" />
 
 									<BoxView Grid.Row="1" Grid.Column="2" Color="#4CA987" CornerRadius="20" />
-									<Label Grid.Row="1" Grid.Column="2" FontSize="20" Text="{Binding SensorData.Date}" Margin="0,0,0,30"
+									<Label Grid.Row="1" Grid.Column="2" FontSize="16" Text="{Binding SensorData.Date}" Margin="0,0,0,30"
 									       HorizontalOptions="Center" VerticalOptions="Center" />
 									<Image Grid.Row="1" Grid.Column="2" WidthRequest="30" HeightRequest="30" Aspect="AspectFit"
 									       HorizontalOptions="Center" VerticalOptions="Start" Source="calendar.xml" />
-									<Label Grid.Row="1" Grid.Column="2" FontSize="25" Text="{Binding SensorData.Time}" HorizontalOptions="Center"
+									<Label Grid.Row="1" Grid.Column="2" FontSize="22" Text="{Binding SensorData.Time}" HorizontalOptions="Center"
 									       VerticalOptions="End" />
 									<Image Grid.Row="1" Grid.Column="2" WidthRequest="30" HeightRequest="30" Margin="0,30,0,0" Aspect="AspectFit"
 									       HorizontalOptions="Center" VerticalOptions="Center" Source="clock.xml" />

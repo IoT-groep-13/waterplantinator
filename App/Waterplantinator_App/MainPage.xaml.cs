@@ -56,17 +56,31 @@ namespace Waterplantinator_App
 			}
 		}
 
-
+		/// <summary>
+		/// Refresh button gets new data from server/Arduino
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void RefreshIBtn_OnClicked(object sender, EventArgs e)
 		{
 			GetData();
 		}
 
+		/// <summary>
+		/// Pushes new Modal with settings page
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void SettingsIBtn_OnClicked(object sender, EventArgs e)
 		{
 			Navigation.PushModalAsync(new Settings());
 		}
 
+		/// <summary>
+		/// Opens connection, gives water command, closes connection
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void WaterBtn_OnClicked(object sender, EventArgs e)
 		{
 			Client.OpenConnection();
@@ -74,6 +88,11 @@ namespace Waterplantinator_App
 			Client.CloseConnection();
 		}
 
+		/// <summary>
+		/// Tap on back of card to turn.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private async void BackSide_OnTapped(object sender, EventArgs e)
 		{
 			await Task.WhenAll(
@@ -89,6 +108,11 @@ namespace Waterplantinator_App
 			);
 		}
 
+		/// <summary>
+		/// Tap on back of card to turn.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private async void FrontSide_OnTapped(object sender, EventArgs e)
 		{
 			await Task.WhenAll(

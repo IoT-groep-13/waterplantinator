@@ -18,18 +18,18 @@
 						<Label Text="Instellingen" HorizontalTextAlignment="Center" TextColor="White" FontSize="20" />
 					</Frame>
                     
-                <FlexLayout JustifyContent="SpaceBetween">
+                <FlexLayout JustifyContent="SpaceEvenly">
                         <Label Text="Darkmode" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Label>
-                        <Switch x:Name="ThemeSwitch" Toggled="Switch_Toggled"/>
+                        <Switch x:Name="ThemeSwitch" WidthRequest="150" Toggled="Switch_Toggled"/>
                 </FlexLayout>
-                    <FlexLayout JustifyContent="SpaceBetween">
+					<FlexLayout JustifyContent="SpaceEvenly">
                         <Label Text="IP-adres" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Label>
-                        <Entry x:Name="ipEntry" HorizontalOptions="FillAndExpand" WidthRequest="300" Keyboard="Telephone" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Entry>                      
+						<Entry x:Name="ipEntry" Placeholder="192.168.0.1" Text="{Binding Ip}" WidthRequest="150" Keyboard="Telephone" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Entry>                      
                         
                     </FlexLayout>
-                    <FlexLayout JustifyContent="SpaceBetween">
+                    <FlexLayout JustifyContent="SpaceEvenly">
                         <Label Text="IP-poort" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Label>
-                        <Entry x:Name="ipPortEntry" HorizontalOptions="FillAndExpand" WidthRequest="300" Keyboard="Telephone" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Entry>
+						<Entry x:Name="ipPortEntry" Placeholder="5000" Text="{Binding Port}" WidthRequest="150" Keyboard="Telephone" TextColor="{AppThemeBinding Light={StaticResource LightTextColor}, Dark={StaticResource DarkTextColor}}"></Entry>
                     </FlexLayout>
                     <Button x:Name="SubmitButton" Text="Opslaan" Clicked="SubmitButton_Clicked"></Button>
                                 
