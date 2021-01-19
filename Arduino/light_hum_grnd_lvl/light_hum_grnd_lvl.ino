@@ -34,10 +34,11 @@ void setup() {
 
 void loop() {
 
-    int analogValue = analogRead(A0);
-
-    Serial.print("Analog reading = ");
-    Serial.print(analogValue); 
+//    int analogValue = analogRead(A2);
+//
+//    Serial.print("Analog reading = ");
+//    Serial.print(analogValue); 
+//    Serial.println();
   
    output_value= analogRead(sensor_pin);
 
