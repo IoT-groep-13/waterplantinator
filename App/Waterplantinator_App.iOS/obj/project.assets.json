@@ -981,24 +981,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wjsti\\.nuget\\packages\\": {},
+    "C:\\Users\\Gaia\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Github\\waterplantinator\\App\\Waterplantinator_App.iOS\\Waterplantinator_App.iOS.csproj",
+      "projectUniqueName": "D:\\Projecten - Stenden\\Plantenwaterinator\\waterplantinator\\App\\Waterplantinator_App.iOS\\Waterplantinator_App.iOS.csproj",
       "projectName": "Waterplantinator_App.iOS",
-      "projectPath": "C:\\Github\\waterplantinator\\App\\Waterplantinator_App.iOS\\Waterplantinator_App.iOS.csproj",
-      "packagesPath": "C:\\Users\\wjsti\\.nuget\\packages\\",
-      "outputPath": "C:\\Github\\waterplantinator\\App\\Waterplantinator_App.iOS\\obj\\",
+      "projectPath": "D:\\Projecten - Stenden\\Plantenwaterinator\\waterplantinator\\App\\Waterplantinator_App.iOS\\Waterplantinator_App.iOS.csproj",
+      "packagesPath": "C:\\Users\\Gaia\\.nuget\\packages\\",
+      "outputPath": "D:\\Projecten - Stenden\\Plantenwaterinator\\waterplantinator\\App\\Waterplantinator_App.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\wjsti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gaia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1012,8 +1012,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Github\\waterplantinator\\App\\Waterplantinator_App\\Waterplantinator_App.csproj": {
-              "projectPath": "C:\\Github\\waterplantinator\\App\\Waterplantinator_App\\Waterplantinator_App.csproj"
+            "D:\\Projecten - Stenden\\Plantenwaterinator\\waterplantinator\\App\\Waterplantinator_App\\Waterplantinator_App.csproj": {
+              "projectPath": "D:\\Projecten - Stenden\\Plantenwaterinator\\waterplantinator\\App\\Waterplantinator_App\\Waterplantinator_App.csproj"
             }
           }
         }
