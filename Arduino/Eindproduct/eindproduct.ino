@@ -7,7 +7,7 @@ dht DHT;
 #define DHT11_PIN 7
 // Grondvochtigheid
 int sensor_pin = A1;
-int output_value ;
+int gnd_vocht ;
 
 // Lichtsensor
 float light;
@@ -105,13 +105,14 @@ void loop()
             outBuf[0] = 0;
           }
           if(data == "<SOILMOIST>"){ 
-            sprintf(outBuf,"<SOILMOIST>%d",int(output_value));
+            sprintf(outBuf,"<SOILMOIST>%d",int(gnd_vocht));
             Serial.println(outBuf);
             server.write(outBuf);
             outBuf[0] = 0;
           }
+// Waterpomp aan en uit zetten via knop
           if(data == "<WATER>"){ 
-           if(output_value < 80) {
+           if(gnd_vocht < 80) {
               digitalWrite(4,HIGH);
            }
            else {
@@ -168,17 +169,19 @@ void HumidityTemp(){
 
 void Grond() {
 
-   output_value= analogRead(sensor_pin);
+   gnd_vocht= analogRead(sensor_pin);
 
-   output_value = map(output_value,1023,0,0,100);
+   gnd_vocht = map(gnd_vocht,1023,0,0,100);
 
    Serial.print("Mositure : ");
 
-   Serial.print(output_value);
+   Serial.print(gnd_vocht);
 
    Serial.println("%");
+
+//  Waterpomp aan en uit zetten
   
-   if(output_value < 70) {
+   if(gnd_vocht < 70) {
       digitalWrite(4,HIGH);
    }
    else {
